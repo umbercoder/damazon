@@ -4,13 +4,10 @@ CREATE database bamazonDB;
 USE bamazonDB;
 
 CREATE TABLE products (
-  item_id INT NOT NULL,
+  item_id int not null,
   product_name VARCHAR(100) NULL,
   department_name VARCHAR(100) NULL,
   price DECIMAL(10,2) NULL,
-  stock_quantity DECIMAL(10,2) NULL,
-
-  PRIMARY KEY (item_id)
+  stock_quantity int not null
 );
 
-SELECT * FROM products;
